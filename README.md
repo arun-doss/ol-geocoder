@@ -1,31 +1,13 @@
-# OpenLayers Control Geocoder
-<p align="center">
-  <a href="https://travis-ci.org/jonataswalker/ol-geocoder">
-    <img src="https://travis-ci.org/jonataswalker/ol-geocoder.svg?branch=master" alt="build status">
-  </a>
-  <a href="https://www.npmjs.com/package/ol-geocoder">
-    <img src="https://img.shields.io/npm/v/ol-geocoder.svg"
-      alt="npm version">
-  </a>
-  <a href="https://github.com/jonataswalker/ol-geocoder/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/ol-geocoder.svg"
-      alt="license">
-  </a>
-  <a href="https://david-dm.org/jonataswalker/ol-geocoder">
-    <img src="https://david-dm.org/jonataswalker/ol-geocoder/status.svg"
-      alt="dependency status">
-  </a>
-  <a href="https://david-dm.org/jonataswalker/ol-geocoder">
-    <img src="https://david-dm.org/jonataswalker/ol-geocoder/dev-status.svg" alt="devDependency status">
-  </a>
-</p>
+# OpenLayers Control Geocoder - Arun's Tweak
 
-A geocoder extension for [OpenLayers](http://openlayers.org/). **Requires** OpenLayers **v3.11.0** or higher.
+This is a tweaked version to fullfill a project requirement.
 
-![geocoder anim](https://raw.githubusercontent.com/jonataswalker/ol-geocoder/screenshots/images/anim.gif)
+If your project doesn't requires the below updates, you can free to use the original source code in [this](https://github.com/jonataswalker/ol-geocoder) link.
 
-## Demo
-You can see [here a demo](http://rawgit.com/jonataswalker/ol-geocoder/master/examples/control-nominatim.html) or on [jsFiddle](http://jsfiddle.net/jonataswalker/c4qv9afb/) if you prefer. There is also a [demo of creating a custom provider](http://rawgit.com/jonataswalker/ol-geocoder/master/examples/custom-provider.html)
+## Tweaked Version Change List
+21/Dec/2020 - Added Search button for the use understanding
+
+
 
 ## Providers
 The plugin supports (for now) the following providers:
@@ -56,24 +38,10 @@ Custom providers must implement the following methods:
 
 ## How to use it?
 
-##### NPM
-`npm install ol-geocoder`
+## Tweaked Version installation instruction
+Download [latest release](https://github.com/arun-doss/ol-geocoder/dist) and (obviously) load **ol-geocoder.js** and **ol-geocoder.min.css** into your script
 
-##### CDN Hosted - [jsDelivr](https://www.jsdelivr.com/package/npm/ol-geocoder)
-Load CSS and Javascript:
-```HTML
-<link href="https://cdn.jsdelivr.net/npm/ol-geocoder@latest/dist/ol-geocoder.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/ol-geocoder"></script>
-```
-
-##### CDN Hosted - UNPKG
-Load CSS and Javascript:
-```HTML
-<link href="https://unpkg.com/ol-geocoder/dist/ol-geocoder.min.css" rel="stylesheet">
-<script src="https://unpkg.com/ol-geocoder"></script>
-```
-##### Self hosted
-Download [latest release](https://github.com/jonataswalker/ol-geocoder/releases/latest) and (obviously) load CSS and Javascript.
+A geocoder extension for [OpenLayers](http://openlayers.org/). **Requires** OpenLayers **v3.11.0** or higher.
 
 ##### Instantiate with some options and add the Control
 ```javascript
@@ -154,3 +122,5 @@ geocoder.on('addresschosen', function(evt) {
   console.info(evt);
 });
 ```
+# For further details and samples please refer the original git page:
+<https://github.com/jonataswalker/ol-geocoder>
