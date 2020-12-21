@@ -34,6 +34,7 @@ export class Html {
         input: container.querySelector(`.${klasses.inputText.input}`),
         reset: container.querySelector(`.${klasses.inputText.reset}`),
         result: container.querySelector(`.${klasses.inputText.result}`),
+        search: container.querySelector(`.${klasses.inputText.search}`),
       };
     } else {
       containerClass = `${klasses.namespace} ${klasses.glass.container}`;
@@ -48,6 +49,7 @@ export class Html {
         input: container.querySelector(`.${klasses.glass.input}`),
         reset: container.querySelector(`.${klasses.glass.reset}`),
         result: container.querySelector(`.${klasses.glass.result}`),
+        search: container.querySelector(`.${klasses.glass.search}`),
       };
     }
 
@@ -72,6 +74,7 @@ Html.input = `
     <input type="text" id="${VARS.inputQueryId}" class="${klasses.inputText.input}" autocomplete="off" placeholder="Search ...">
     <span class="${klasses.inputText.icon}"></span>
     <button type="button" id="${VARS.inputResetId}" class="${klasses.inputText.reset} ${klasses.hidden}"></button>
+    <input type="button" id="${VARS.inputSearchId}" class="${klasses.inputText.search}" value="Search" />
   </div>
   <ul class="${klasses.inputText.result}"></ul>
 `;

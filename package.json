@@ -1,17 +1,17 @@
 {
-  "name": "ol-geocoder",
+  "name": "ol-geocoder-search",
   "version": "4.1.1",
   "description": "A geocoder extension for OpenLayers.",
-  "author": "Jonatas Walker",
-  "homepage": "https://github.com/jonataswalker/ol-geocoder",
+  "author": "Jonatas Walker & Arun Prasad R",
+  "homepage": "https://github.com/arun-doss/ol-geocoder",
   "license": "MIT",
   "main": "dist/ol-geocoder.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jonataswalker/ol-geocoder.git"
+    "url": "git://github.com/arun-doss/ol-geocoder.git"
   },
   "bugs": {
-    "url": "https://github.com/jonataswalker/ol-geocoder/issues"
+    "url": "https://github.com/arun-doss/ol-geocoder/issues"
   },
   "files": [
     "dist/"

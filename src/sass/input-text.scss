@@ -71,6 +71,30 @@ $result-top: $control-height + .2;
   }
 }
 
+.#{map-get($input-text, search)} {
+  position: absolute;
+  z-index: $z-index + 1;
+  top: 0;
+  right: 0;
+  width: $icon;
+  height: 100%;
+  line-height: 100%;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+
+  &::after {
+    content: "\d7";
+    display: inline-block;
+    color: #333;
+    font-size: $font-big * 2;
+    cursor: pointer;
+  }
+}
+
 .#{map-get($input-text, icon)} {
   position: absolute;
   top: 0;

@@ -50,3 +50,13 @@ $input-text: map-get($cssClasses, inputText);
   font-weight: lighter;
   color: $font-color;
 }
+
+#gcd-input-search {
+  width: 6em;
+  color: white;
+  background: gray;
+}
+
+#gcd-input-reset {
+  right: 7em;
+}

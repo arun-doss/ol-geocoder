@@ -3,6 +3,7 @@
   "buttonControlId": "gcd-button-control",
   "inputQueryId": "gcd-input-query",
   "inputResetId": "gcd-input-reset",
+  "inputSearchId":"gcd-input-search",
   "cssClasses": {
     "namespace": "ol-geocoder",
     "spin": "gcd-pseudo-rotate",
@@ -19,7 +20,8 @@
       "input": "gcd-gl-input",
       "expanded": "gcd-gl-expanded",
       "reset": "gcd-gl-reset",
-      "result": "gcd-gl-result"
+      "result": "gcd-gl-result",
+      "search": "gcd-gl-search"
     },
     "inputText": {
       "container": "gcd-txt-container",
@@ -27,7 +29,8 @@
       "input": "gcd-txt-input",
       "reset": "gcd-txt-reset",
       "icon": "gcd-txt-glass",
-      "result": "gcd-txt-result"
+      "result": "gcd-txt-result",
+      "search": "gcd-txt-search"
     }
   }
 }

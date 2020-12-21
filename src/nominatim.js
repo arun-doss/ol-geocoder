@@ -90,6 +90,11 @@ export class Nominatim {
       addClass(this.els.reset, klasses.hidden);
       this.clearResults();
     };
+
+    const search = (evt) => {
+      let value = this.els.input.value; // dirty tweak to get the search string
+      this.query(value);
+    };
     const handleValue = (evt) => {
       const value = evt.target.value.trim();
 
@@ -112,6 +117,7 @@ export class Nominatim {
     this.els.input.addEventListener('click', stopBubbling, false);
     this.els.input.addEventListener('input', handleValue, false);
     this.els.reset.addEventListener('click', reset, false);
+    this.els.search.addEventListener('click', search, false);
 
     if (this.options.targetType === TARGET_TYPE.GLASS) {
       this.els.button.addEventListener('click', openSearch, false);
@@ -370,4 +376,5 @@ export class Nominatim {
 
     if (!found) map.addLayer(this.layer);
   }
+
 }
